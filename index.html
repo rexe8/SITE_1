@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background-color: #ffe6e6;
+    }
+    h1 {
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #noBtn {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Want to go on a datee?? ❤️</h1>
+
+<button onclick="sayYes()">Yes 💖</button>
+<button id="noBtn" onmouseover="moveNo()">No 😢</button>
+
+<script>
+function sayYes() {
+  document.body.innerHTML = "<h1>love you sm❤️</h1><p>You make my life beautiful💕</p>";
+}
+
+function moveNo() {
+  let btn = document.getElementById("noBtn");
+  let x = Math.random() * window.innerWidth;
+  let y = Math.random() * window.innerHeight;
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
